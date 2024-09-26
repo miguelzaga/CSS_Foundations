@@ -1,27 +1,26 @@
 @import url("./base.css");
 
-.main {
-  padding: 150px;
-}
-
-.main__heading {
+.home .main__heading {
   font-size: 128px;
   font-weight: bold;
 }
 
-.main__sub-heading {
+.home .main__sub-heading {
   font-size: 40px;
 }
 
-.button-container {
-  display: flex;
-  margin-top: 100px;
+@media (max-width: 1220px) {
+  .home .main__heading {
+    font-size: 70px;
+  }
 }
 
-.button:not(button:last-of-type) {
-  margin-inline-end: 20px;
-}
+@media (max-width: 590px) {
+  .home .main__heading {
+    font-size: 40px;
+  }
 
-.button__icon {
-  vertical-align: middle;
+  .home .main__sub-heading {
+    font-size: 24px;
+  }
 }
